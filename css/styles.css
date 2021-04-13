@@ -85,7 +85,7 @@ p {
 .header-container,
 .logo,
 .nav-list,
-.nav-item,
+.nav-list__item,
 .nav {
   display: flex;
   margin-top: 0;
@@ -93,16 +93,16 @@ p {
   align-items: center;
 }
 
-header {
+.page-header {
   padding-top: 24px;
   padding-bottom: 25px;
 }
 
-.header {
+.page-header--underlines {
   border-bottom: 1px solid #ececec;
 }
 
-.nav-item:not(:last-child) {
+.nav-list__item:not(:last-child) {
   margin-right: 50px;
 }
 
@@ -129,20 +129,20 @@ header {
   letter-spacing: var(--spacing);
 }
 
-.web {
+.logo__start {
   color: var(--akcent-color);
 }
 
-.studio {
+.logo__end {
   color: #000000;
 }
 
-.header-icon {
+.nav-list__icon {
   margin-right: 10px;
   fill: currentColor;
 }
 
-.nav-social-link {
+.nav-list__link--gray {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -156,33 +156,33 @@ header {
   color: var(--secondary-text-color);
 }
 
-.nav-link:hover,
-.nav-link:focus {
+.nav-list__link:hover,
+.nav-list__link:focus {
   color: var(--akcent-color);
 }
 
-.nav-link:hover .header-icon,
-.nav-link:focus .header-icon {
+.nav-list__link:hover .nav-list__icon,
+.nav-list__link:focus .nav-list__icon {
   fill: var(--akcent-color);
 }
 
-.nav-link {
+.nav-list__link {
   transition: color 250ms var(--timing-function);
 }
 
-.nav-link .header-icon {
+.nav-list__link .nav-list__icon {
   transition: fill 250ms var(--timing-function);
 }
 
 /* Акцет цвет + Подчеркивание страницы навигации */
-.current {
+.nav-list__link--underlines {
   /* outline: 1px solid #000000; */
   display: block;
   position: relative;
   color: var(--akcent-color);
 }
 
-.current::after {
+.nav-list__link--underlines::after {
   content: "";
   position: absolute;
   top: 44px;
@@ -717,11 +717,11 @@ header {
   flex-direction: column;
   justify-content: start;
 }
-.footer-studio {
+.logo__end--light {
   color: var(--white-text-color);
 }
 
-.footer-list {
+.contacts-list {
   margin-top: 20px;
   font-style: normal;
   font-weight: 400;
@@ -731,11 +731,11 @@ header {
   color: #ffffff;
 }
 
-.contact-link {
+.contacts-list__link {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.contacts-item:not(:last-child) {
+.contacts-list__item:not(:last-child) {
   margin-bottom: 9px;
 }
 

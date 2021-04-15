@@ -456,23 +456,23 @@ p {
 }
 
 /* ПРИНЦИПЫ */
-.principles-section {
+.concepts {
   padding-top: 94px;
   padding-bottom: 0;
 }
 
-.principles-list {
+.concepts__list {
   display: flex;
   margin: 0;
   margin-left: calc(-1 * var(--card-set-gap));
 }
 
-.principles-item {
+.concepts__item {
   flex-basis: calc(100% / 4 - var(--card-set-gap));
   margin-left: var(--card-set-gap);
 }
 
-.principles-container-icons {
+.concepts__icons {
   display: flex;
   min-height: 120px;
   justify-content: center;
@@ -480,10 +480,6 @@ p {
   margin-bottom: 30px;
   background-color: #f5f4fa;
   border-radius: 4px;
-}
-.principles-icons {
-  justify-content: center;
-  align-items: center;
 }
 
 .subtitle {
@@ -497,7 +493,6 @@ p {
 
 .text {
   margin-top: 10px;
-
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -506,7 +501,7 @@ p {
 }
 
 /* ЧЕМ МЫ ЗАНИМАЕМСЯ */
-.work-section {
+.work {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -518,24 +513,22 @@ p {
   text-align: center;
 }
 
-.work-list {
+.work__list {
   display: flex;
   justify-content: center;
   margin-top: 50px;
 }
 
-.work-item:not(:last-child) {
+.work__item:not(:last-child) {
   margin-right: var(--card-set-gap);
 }
 
-/* позиционирование */
-.work-item {
+.work__tem {
   position: relative;
 }
-.foto-thumb {
+.work__thumb {
   position: absolute;
   bottom: 0;
-
   display: flex;
   width: 100%;
   min-height: 70px;
@@ -544,7 +537,7 @@ p {
   align-items: center;
 }
 
-.foto-thumb > .subtitle {
+.work__thumb > .subtitle {
   color: var(--white-text-color);
 }
 

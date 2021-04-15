@@ -194,10 +194,9 @@ p {
 }
 
 /* ГЕРОЙ */
+
 .hero {
-  /* display: flex; */
   max-width: 1600px;
-  /* height: 100vh; */
   padding-top: 200px;
   padding-bottom: 200px;
   margin-left: auto;
@@ -213,7 +212,7 @@ p {
   background-position: center;
 }
 
-.hero-title {
+.hero__title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -299,14 +298,21 @@ p {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-
   width: 528px;
   height: 581px;
-
   background-color: var(--main-background-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+}
+
+.modal__button-close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  padding: 0;
+  background-color: #ffffff;
+  border: none;
 }
 
 .close {
@@ -315,31 +321,22 @@ p {
   align-items: center;
   height: 30px;
   width: 30px;
-
   background-color: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   cursor: pointer;
 }
 
-.close-box {
-  position: absolute;
-  top: 8px;
-  right: 8px;
-  padding: 0;
-
-  background-color: #ffffff;
-  border: none;
+.close__icon {
+  transition: fill 250ms var(--akcent-color);
 }
 
-.close-icon:hover,
-.close-icon:focus {
+.close__icon:hover,
+.close__icon:focus {
   fill: var(--akcent-color);
 }
 
-.close-icon {
-  transition: fill 250ms var(--akcent-color);
-}
+
 /* Кнопка-фильтры */
 .button-filter {
   font-family: var(--main-font);
@@ -501,6 +498,7 @@ p {
 }
 
 /* ЧЕМ МЫ ЗАНИМАЕМСЯ */
+
 .work {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -526,6 +524,7 @@ p {
 .work__tem {
   position: relative;
 }
+
 .work__thumb {
   position: absolute;
   bottom: 0;
@@ -542,6 +541,7 @@ p {
 }
 
 /* НАША КОМАНДА */
+
 .team {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -835,7 +835,7 @@ p {
   padding: 0;
 }
 
-.form-title {
+.form-modal__title {
   display: flex;
   justify-content: center;
   margin-bottom: 12px;
@@ -847,18 +847,27 @@ p {
   letter-spacing: var(--spacing);
 }
 
-.form-field {
+.form-modal__field {
   display: flex;
   flex-direction: column;
   position: relative;
   
 }
 
-.form-field:not(:last-child) {
+.form-modal__field:not(:last-child) {
   margin-bottom: 10px;
 }
 
-.input {
+.form-modal__label {
+  margin-bottom: 4px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: #757575;
+}
+
+.form-modal__input {
   font-size: 14px;
   line-height: 1.17;
   padding-left: 42px;
@@ -871,29 +880,20 @@ p {
   cursor: pointer;
 }
 
-.form-modal-label {
-  margin-bottom: 4px;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.01em;
-  color: #757575;
-}
-
-.form-icon {
+.form-modal__icon {
   position: absolute;
   top: 50%;
   left: 12px;
   transition: box-shadow 250ms var(--timing-function);
 }
 
-.input:hover,
-.input:focus {
+.form-modal__input:hover,
+.form-modal__input:focus {
   border: 1px solid var(--akcent-color);
 }
 
-.input:hover + .form-icon,
-.input:focus + .form-icon {
+.form-modal__input:hover + .form-modal__icon,
+.form-modal__input:focus + .form-modal__icon {
   fill: var(--akcent-color);
 }
 
@@ -924,13 +924,13 @@ p {
   border: 1px solid var(--akcent-color);
 }
 
-.form-contract {
+.form-modal__contract {
   display: flex;
   margin-top: 20px;
   margin-bottom: 30px;
 }
 
-.contract-label {
+.form-modal__contract-label {
   display: flex;
   align-items: center;
   font-weight: 400;
@@ -940,12 +940,12 @@ p {
   color: #757575;
 }
 
-.form-link {
+.form-modal__link {
   margin-left: 3px;
   color: var(--akcent-color);
 }
 
-.contract-checkbox {
+.form-modal__contract-checkbox {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -953,7 +953,7 @@ p {
   position: absolute;
 }
 
-.form-icon-check {
+.form-modal__icon-check {
   margin-right: 7px;
   margin-left: 14px;
   border: 2px solid var(--main-text-color);
@@ -961,7 +961,7 @@ p {
   fill: none;
 }
 
-.contract-checkbox:checked + .form-icon-check {
+.form-modal__contract-checkbox:checked + .form-modal__icon-check {
   fill: var(--main-background-color);
   border-color: var(--akcent-color);
   border: none;
@@ -971,7 +971,7 @@ p {
   
 }
 
-.button-form {
+.form-modal__button {
   margin-top: 0;
   margin-bottom: 0px;
   padding: 10px 55px;

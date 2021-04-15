@@ -521,7 +521,7 @@ p {
   margin-right: var(--card-set-gap);
 }
 
-.work__tem {
+.work__item {
   position: relative;
 }
 

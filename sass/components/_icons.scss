@@ -1,0 +1,96 @@
+.nav-list__icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.nav-list__link:hover .nav-list__icon,
+.nav-list__link:focus .nav-list__icon {
+  fill: var(--akcent-color);
+}
+
+.nav-list__link {
+  transition: color var(--time-transition) var(--timing-function);
+}
+
+.close__icon {
+  transition: fill var(--time-transition) var(--akcent-color);
+}
+
+.close__icon:hover,
+.close__icon:focus {
+  fill: var(--akcent-color);
+}
+
+.concepts__icons {
+  display: flex;
+  min-height: 120px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  background-color: var(--section-bg-color);
+  border-radius: 4px;
+}
+
+.social-list .social-list__icon {
+  width: 20px;
+  height: 20px;
+  fill: var(--pale-color);
+}
+
+.social-list__link .social-list__icon {
+  transition: fill var(--time-transition) var(--timing-function);
+}
+
+.social-list__link:hover .social-list__icon,
+.social-list__link:focus .social-list__icon {
+  fill: var(--white-text-color);
+}
+
+.clients__link:hover .clients-icon,
+.clients__link:focus .clients-icon {
+  fill: var(--akcent-color);
+}
+
+.clients__icon {
+  fill: var(--pale-color);
+  transition: fill var(--time-transition) var(--timing-function);
+}
+
+.social-list__link .social-list__icon--white {
+  fill: var(--main-background-color);
+}
+
+.send__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+  fill: var(--white-text-color);
+}
+
+.form-modal__icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transition: box-shadow var(--time-transition) var(--timing-function);
+}
+
+.form-modal__input:hover + .form-modal__icon,
+.form-modal__input:focus + .form-modal__icon {
+  fill: var(--akcent-color);
+}
+
+.form-modal__icon-check {
+  margin-right: 7px;
+  margin-left: 14px;
+  border: 2px solid var(--main-text-color);
+  border-radius: 2px;
+  fill: none;
+}
+
+.form-modal__contract-checkbox:checked + .form-modal__icon-check {
+  fill: var(--main-background-color);
+  border-color: var(--akcent-color);
+  border: none;
+  background-color: var(--akcent-color);
+}

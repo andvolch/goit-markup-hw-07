@@ -1,0 +1,33 @@
+.concepts {
+  padding-top: 94px;
+  padding-bottom: 0;
+}
+
+.concepts__list {
+  display: flex;
+  margin: 0;
+  margin-left: calc(-1 * var(--card-set-gap));
+}
+
+.concepts__item {
+  flex-basis: calc(100% / 4 - var(--card-set-gap));
+  margin-left: var(--card-set-gap);
+}
+
+.subtitle {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: var(--base-spacing);
+  text-transform: uppercase;
+  color: var(--main-text-color);
+}
+
+.text {
+  margin-top: 10px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: var(--base-spacing);
+  color: var(--secondary-text-color);
+}

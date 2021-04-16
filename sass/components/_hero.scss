@@ -4,9 +4,9 @@
   padding-bottom: 200px;
   margin-left: auto;
   margin-right: auto;
-  background-image: var(--hero-gradient), url(/images/geroy/Img-header.jpg);
+  background-image: $hero-gradient, url(/images/geroy/Img-header.jpg);
   background-repeat: no-repeat;
-  background-color: var(--hero-bg-color);
+  background-color: $hero-bg-color;
   background-size: cover;
   background-position: center;
 }
@@ -18,5 +18,5 @@
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--white-text-color);
+  color: $white-text-color;
 }

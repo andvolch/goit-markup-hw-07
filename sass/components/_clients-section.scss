@@ -20,13 +20,13 @@
   list-style: none;
   justify-content: center;
   align-items: center;
-  margin-left: calc(-1 * var(--card-set-gap));
+  margin-left: calc(-1 * 30px);
   margin-top: 50px;
 }
 
 .clients__item {
-  flex-basis: calc(100% / 6 - var(--card-set-gap));
-  margin-left: var(--card-set-gap);
+  flex-basis: calc(100% / 6 - 30px);
+  margin-left: 30px;
 }
 
 .clients__link {
@@ -35,12 +35,12 @@
   align-items: center;
   width: 170px;
   height: 90px;
-  border: 1px solid var(--pale-color);
+  border: 1px solid $pale-color;
   border-radius: 4px;
-  transition: border var(--time-transition) var(--timing-function);
-}
+  transition: border $time-transition $timing-function;
 
-.clients__link:hover,
-.clients__link:focus {
-  border: 1px solid var(--akcent-color);
+  &:hover,
+  &:focus {
+  border: 1px solid $akcent-color;
+  }
 }

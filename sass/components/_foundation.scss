@@ -25,10 +25,10 @@ p {
 }
 
 .page-body {
-  background-color: var(--main-background-color);
-  color: var(--main-text-color);
-  font-family: var(--main-font);
-  letter-spacing: var(--base-spacing);
+  background-color: $main-background-color;
+  color: $main-text-color;
+  font-family: $main-font;
+  letter-spacing: $base-spacing;
   margin: 0;
 }
 

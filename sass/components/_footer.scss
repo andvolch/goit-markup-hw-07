@@ -1,6 +1,6 @@
 .basement {
   display: flex;
-  background-color: var(--footer-bg-color);
+  background-color: $footer-bg-color;
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -13,7 +13,6 @@
 }
 .contacts-box {
   display: flex;
-  flex-basis: calc((50% - 45px) / 2);
   align-items: baseline;
 }
 .contacts {
@@ -22,7 +21,7 @@
   justify-content: start;
 }
 .logo__end--light {
-  color: var(--white-text-color);
+  color: $white-text-color;
 }
 
 .contacts-list {
@@ -31,17 +30,17 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
-  letter-spacing: var(--base-spacing);
-  color: var(--white-text-color);
+  letter-spacing: $base-spacing;
+  color: $white-text-color;
 }
 
 .contacts-list__link {
-  color: var(--pale-color-transparent);
-}
+  color: $pale-color-transparent;
 
-.contacts-list__link:hover,
-.contacts-list__link:focus {
-  color: var(--akcent-color);
+  &:hover,
+  &:focus {
+  color: $akcent-color;
+  }
 }
 
 .contacts-list__item:not(:last-child) {
@@ -55,7 +54,7 @@
 }
 
 .social-links > .subtitle {
-  color: var(--white-text-color);
+  color: $white-text-color;
 }
 
 .social-list__link--dark {
@@ -69,5 +68,5 @@
 }
 
 .send > .subtitle {
-  color: var(--white-text-color);
+  color: $white-text-color;
 }

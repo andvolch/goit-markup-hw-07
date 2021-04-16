@@ -1,7 +1,6 @@
 .header-container,
 .logo,
 .nav-list,
-.nav-list__item,
 .nav {
   display: flex;
   margin-top: 0;
@@ -12,14 +11,10 @@
 .page-header {
   padding-top: 24px;
   padding-bottom: 25px;
-}
 
-.page-header--underlines {
-  border-bottom: 1px solid $underlines-color;
-}
-
-.nav-list__item:not(:last-child) {
-  margin-right: 50px;
+  &--underlines {
+    border-bottom: 1px solid $underlines-color;
+  }
 }
 
 .nav,
@@ -34,6 +29,17 @@
   margin-left: 93px;
 }
 
+.nav-list__item {
+  display: flex;
+  margin-top: 0;
+  justify-content: space-between;
+  align-items: center;
+
+  &:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+
 .logo {
   justify-content: start;
   font-family: $minor-font;
@@ -41,14 +47,14 @@
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: $base-spacing;
-}
 
-.logo__start {
-  color: $akcent-color;
-}
-
-.logo__end {
-  color: $dark-logo;
+  &__start {
+    color: $akcent-color;
+  }
+  
+  &__end {
+    color: $dark-logo;
+  }
 }
 
 .nav-list__link--gray {
@@ -64,29 +70,30 @@
   color: $secondary-text-color;
 }
 
-.nav-list__link:hover,
-.nav-list__link:focus {
-  color: $akcent-color;
-}
-
 .nav-list__link {
   transition: color $time-transition $timing-function;
+
+  &:hover,
+  &:focus {
+    color: $akcent-color;
+  }
 }
 
 .nav-list__link--underlines {
   display: block;
   position: relative;
   color: $akcent-color;
-}
 
-.nav-list__link--underlines::after {
-  content: "";
-  position: absolute;
-  top: 44px;
-  left: 0;
-  display: block;
-  width: 100%;
-  height: 4px;
-  background-color: $akcent-color;
-  border-radius: 2px;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 44px;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: $akcent-color;
+    border-radius: 2px;
+  }
+  
 }
